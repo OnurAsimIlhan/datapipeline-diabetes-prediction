@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassiifer
 import pickle
 import yaml
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
@@ -8,9 +8,9 @@ import os
 from sklearn.model_selection import train_test_split, GridSearchCV
 from urllib.parse import urlparse
 import mlflow
-os.environ['MLFLOW_TRACKING_URL'] = "https://dagshub.com/OnurAsimIlhan/mlpipeline.mlflow"
-os.environ['MLFLOW_TRACKING_USERNAME'] = "OnurAsimIlhan"
-os.environ['MLFLOW_TRACKING_PASSWORD'] = "c98909fc9f76f04787d294ede7b9ca884afafa90"
+os.environ['MLFLOW_TRACKING_URL'] = ""
+os.environ['MLFLOW_TRACKING_USERNAME'] = ""
+os.environ['MLFLOW_TRACKING_PASSWORD'] = ""
 
 def hyperparameter_tuning(X_train, y_train, param_grid):
     rf = RandomForestClassifier()

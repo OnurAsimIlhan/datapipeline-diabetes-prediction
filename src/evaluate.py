@@ -7,9 +7,9 @@ import mlflow
 from urllib.parse import urlparse
 
 
-os.environ['MLFLOW_TRACKING_URL'] = "https://dagshub.com/OnurAsimIlhan/mlpipeline.mlflow"
-os.environ['MLFLOW_TRACKING_USERNAME'] = "OnurAsimIlhan"
-os.environ['MLFLOW_TRACKING_PASSWORD'] = "c98909fc9f76f04787d294ede7b9ca884afafa90"
+os.environ['MLFLOW_TRACKING_URL'] = ""
+os.environ['MLFLOW_TRACKING_USERNAME'] = ""
+os.environ['MLFLOW_TRACKING_PASSWORD'] = ""
 
 params=yaml.safe_load(open("params.yaml"))['train']
 def evaulate(data_path, model_path):
